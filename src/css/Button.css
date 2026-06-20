@@ -1,0 +1,59 @@
+.btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+/* Primary: solid purple filled button */
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(109, 40, 217, 0.15);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn--primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(109, 40, 217, 0.15);
+}
+
+/* Secondary: light purple / soft button */
+.btn--secondary {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border: 1.5px solid transparent;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: #dcc7f7;
+  border-color: var(--color-primary);
+}
+
+.btn--secondary:active:not(:disabled) {
+  background-color: #d0bef0;
+}
+
+/* Disabled state shared by all variants (matches the greyed-out Login button) */
+.btn:disabled {
+  background-color: var(--color-disabled);
+  color: #ffffff;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+  transform: none;
+}

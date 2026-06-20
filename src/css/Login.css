@@ -1,0 +1,41 @@
+.login {
+  padding: 32px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login__title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.login__subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.login__action {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
